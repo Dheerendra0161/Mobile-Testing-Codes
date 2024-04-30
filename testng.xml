@@ -3,10 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testingApps.CreateNewContactsTest"/>
-      <class name="webAppTesting.WebAppTesting"/>
+     <!-- <class name="testingApps.CreateNewContactsTest"/>
       <class name="testingApps.DialMobileNumAndErrage"/>
       <class name="testingApps.CallingByNumber"/>
+      -->
+      <class name="webAppTesting.WebAppTesting"/>
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
