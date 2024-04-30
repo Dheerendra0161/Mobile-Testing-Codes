@@ -12,14 +12,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
 
-public class WebAppTesting {
+public class WebAppTest {
 	public static AndroidDriver driver;
 
-	@BeforeClass
+	@BeforeMethod
 	public void setUp() throws MalformedURLException {
 		DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 		desiredCapabilities.setCapability("platformName", "Android");
@@ -41,7 +42,7 @@ public class WebAppTesting {
 	}
 
 	@Test
-	public void webAppBasicTesting() {
+	public void testwebAppBasic() {
 		driver.get("https://www.amazon.in/");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		WebElement searchBox = driver.findElement(By.xpath("//input[@class='nav-input nav-progressive-attribute']"));
@@ -71,4 +72,6 @@ public class WebAppTesting {
 			driver.quit();
 		}
 	}
+
+	
 }

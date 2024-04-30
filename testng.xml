@@ -7,7 +7,7 @@
       <class name="testingApps.DialMobileNumAndErrage"/>
       <class name="testingApps.CallingByNumber"/>
       -->
-      <class name="webAppTesting.WebAppTesting"/>
+      <class name="webAppTesting.WebAppTest"/>
      
     </classes>
   </test> <!-- Test -->
