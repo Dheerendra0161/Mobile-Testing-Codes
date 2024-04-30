@@ -1,0 +1,19 @@
+# Eclipse specific files
+
+.settings/
+test-output/
+
+
+
+# Compiled Java classes
+*.class
+
+
+# Log files
+*.log
+
+
+
+/target/
+
+/.metadata/
