@@ -29,7 +29,7 @@ public class WebAppTesting {
 
 		desiredCapabilities.setCapability("browserName", "Chrome");
 
-		// Path to your chromedriver executable
+		// Path to your chromedriver.exe executable for WebApp Testing
 		desiredCapabilities.setCapability("chromedriverExecutable",
 				"C:\\Users\\Dheerendra\\Desktop\\Appium APK file\\chromedriver-win64 (1)\\chromedriver-win64\\chromedriver.exe");
 
